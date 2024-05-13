@@ -58,7 +58,7 @@ function buildCharts(sample) {
       'mode': 'markers',
       'marker': {
         'color': otuIds,
-        'colorscale': 'Rainbow',
+        'colorscale': 'Portland',
         'size': sampleValues
       },
       'text': otuLabels
@@ -91,7 +91,11 @@ function buildCharts(sample) {
       'y' : otuIdsStrings.slice(0,10).reverse(),
       'type':'bar',
       'orientation': 'h',
-      'hovertext': otuLabels.slice(0,10).reverse()
+      'hovertext': otuLabels.slice(0,10).reverse(),
+      'marker':{
+        'color':otuIds,
+        'colorscale': 'Portland'
+      }
 
     }
     var data1 = [trace1]
@@ -126,7 +130,7 @@ function init() {
   });
 
   // Get the first sample from the list
-  var firstSample = names[1];
+  var firstSample = names[0];
 
   // Build charts and metadata panel with the first sample
   buildCharts(firstSample);
