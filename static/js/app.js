@@ -66,7 +66,13 @@ function buildCharts(sample) {
     var data = [trace];
 
     var layout = {
-      'title':'Bacteria Cultures Per Sample'
+      'title':'Bacteria Cultures Per Sample',
+      xaxis: {
+        title: 'OTU IDs' 
+    },
+    yaxis: {
+        title: 'Number of Bacteria' 
+    }
     }
 
 
