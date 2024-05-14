@@ -59,7 +59,7 @@ function buildCharts(sample) {
       'marker': {
         'color': otuIds,
         'colorscale': 'Portland',
-        'size': sampleValues
+        'size': sampleValues*2
       },
       'text': otuLabels
     };
